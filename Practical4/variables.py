@@ -21,3 +21,16 @@ else:
 
 # Conclusion: d=25, e=22 
 # d>e, population growth is decelerating
+
+
+#difine boolean variables
+X=True
+Y=False
+W=X or Y
+print("W=",W)
+#the Truth Table of W:
+# X |Y |W
+# True |True |True
+# True |False|True
+# False|True |True
+# False|False|False     
