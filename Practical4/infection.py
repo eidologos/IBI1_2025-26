@@ -6,8 +6,8 @@
 #5.print the total days
 
 
-initial_infected=5
-growth_rate=0.4
+initial_infected=int(input("Please enter the initial infected number:"))
+growth_rate=float(input("Please enter the daily growth rate:"))
 total_students=91
 current_infected=initial_infected
 daycounter=0
