@@ -13,9 +13,9 @@ print("Population change 2004-2014: ", d)
 print("Population change 2014-2024: ", e)
 # Compare d and e, judge the population growth trend
 if d > e:
-    print("population growth in Scotland is decelerating")
+    print("the population growth in Scotland is decelerating")
 elif e > d:
-    print("population growth in Scotland is accelerating")
+    print("the population growth in Scotland is accelerating")
 else:
     print("the speed of population growth remains unchanged")
 
