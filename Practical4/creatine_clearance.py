@@ -9,7 +9,7 @@
 # CrCl = ((140 - age) * weight) / (72 * Cr) * gender_factor(Factor: 1 for male, 0.85 for female)
 # 5. print the result
 age=int(input("Please enter your age(year):"))
-while age >= 100:
+while age >= 100:  #check the values of variable
      print("Age must be < 100!!!")
      age=int(input("Please enter your age(year):"))
 weight=float(input("Please enter yourweight(kg):"))
@@ -24,9 +24,8 @@ cr=float(input("Please enter serum creatinine(μmol/L):"))
 while cr <= 0 or cr >= 100:
     print("Cr must be 0-100 μmol/L!!!")
     cr=float(input("Please enter serum creatinine(μmol/L):"))
-#check the values of variable
 
-# define gender factor
+#difine gender factor
 if gender == "male":
      factor=1.0
 else:
