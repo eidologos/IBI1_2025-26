@@ -12,10 +12,10 @@ age=int(input("Please enter your age(year):"))
 while age >= 100:  #check the values of variable
      print("Age must be < 100!!!")
      age=int(input("Please enter your age(year):"))
-weight=float(input("Please enter yourweight(kg):"))
+weight=float(input("Please enter your weight(kg):"))
 while weight <= 20 or weight >= 80:
      print("Weight must be 20-80 kg!!!")
-     weight=float(input("Please enter yourweight(kg):"))
+     weight=float(input("Please enter your weight(kg):"))
 gender=input("Please enter your gender(male/female):")
 while gender not in ["male", "female"]:
     print("Gender must be male/female!!!")
