@@ -23,7 +23,7 @@ else:
 # d>e, population growth is decelerating
 
 
-#difine boolean variables
+#define boolean variables
 X=True
 Y=False
 W=X or Y
