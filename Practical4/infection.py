@@ -1,5 +1,5 @@
 #Pseudocode:
-#1.define variables
+#1.define variables and input values
 #2.Initialize current infected and day counter
 #3.loop:calculate daily infected
 #4.stop loop when all students are infected
