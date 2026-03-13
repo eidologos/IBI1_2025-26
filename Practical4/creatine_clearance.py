@@ -25,7 +25,7 @@ while cr <= 0 or cr >= 100:
     print("Cr must be 0-100 μmol/L!!!")
     cr=float(input("Please enter serum creatinine(μmol/L):"))
 
-#difine gender factor
+#define gender factor
 if gender == "male":
      factor=1.0
 else:
