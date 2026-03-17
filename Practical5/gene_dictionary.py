@@ -15,7 +15,6 @@ plt.xlabel("Gene name")
 plt.xticks(rotation=0)
 plt.ylabel("Expression Level")
 plt.tight_layout()
-plt.show()
 
 #modifiable variable:gene of interest
 gene_interest="TP53"
@@ -25,6 +24,7 @@ else:
     print(gene_interest,"is not in the dictionary")
 average=sum(exp_value)/len(exp_value) #calculate the average value
 print("the average of gene expression values is:",average)
+plt.show()
 
 
 
