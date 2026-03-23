@@ -29,7 +29,7 @@ else:
 import matplotlib
 matplotlib.use('MacOSX')
 import matplotlib.pyplot as plt
-labels=["Low heart rate","Normal heart rate","High heart rate"]
+labels=[f"Low heart rate ({low})", f"Normal heart rate ({normal})", f"High heart rate ({high})"]
 sizes=[low,normal,high]
 colors=["lightblue","lightgreen","lightcoral"]
 plt.pie(sizes,labels=labels,colors=colors,autopct="%1.1f%%",startangle=140)
