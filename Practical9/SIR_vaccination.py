@@ -12,7 +12,7 @@ dt = 0.1  # Time step for ODE solver (smoother curves)
 # Vaccination rates to test (0% to 100%, step 10%)
 vaccination_rates = np.arange(0, 1.1, 0.1)
 
-plt.figure(figsize=(10, 6), dpi=120)
+plt.figure(figsize=(6, 4), dpi=150)
 
 for idx, v in enumerate(vaccination_rates):
     # Initial conditions: vaccinated = initial recovered
@@ -53,5 +53,5 @@ plt.legend(loc='upper right', title='Vaccination %', fontsize=10, title_fontsize
 plt.grid(alpha=0.3)
 plt.ylim(bottom=-100)  # Slight negative to show near-zero lines
 plt.tight_layout()
-plt.savefig('SIR_vaccination_deterministic.png', dpi=150, bbox_inches='tight')
+plt.savefig('/Users/zhanghanmeng/Downloads/IBI 1/IBI1_2025-26/Practical9/SIR_vaccination_result.png')
 plt.show()
