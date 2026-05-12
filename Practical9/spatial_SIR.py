@@ -1,3 +1,35 @@
+#1. Import required libraries
+    # IMPORT numpy AS np
+    # IMPORT matplotlib.pyplot AS plt
+
+#2. Set up 2D grid and parameters
+    # CREATE 100x100 grid filled with 0 (Susceptible)
+    # RANDOMLY infect one cell (set to 1)
+    # SET beta = 0.3, gamma = 0.05, time_steps = 100
+    # DEFINE 8 surrounding directions for neighbors
+
+#3. Prepare for animation
+    # TURN ON interactive plotting
+    # CREATE figure for heatmap and SIR curve as an auxiliary chart to clearly present the changes in quantity over time
+
+#4. Main simulation loop
+    # FOR each time step
+        # GET current infected positions
+        # Calculate and record S, I, R numbers
+        
+        # Infection process:
+            # FOR each infected cell
+                # CHECK all 8 neighbors
+                # IF neighbor is susceptible, infect it with probability beta
+        
+        # Recovery process:
+            # FOR each infected cell
+                # Recover with probability gamma (set to 2)
+        
+        # UPDATE animation: plot heatmap and SIR curve
+        # PAUSE for smooth display
+
+#5. generate final plot
 import numpy as np
 import matplotlib.pyplot as plt
 import time

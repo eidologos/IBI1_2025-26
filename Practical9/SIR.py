@@ -1,3 +1,30 @@
+#1. Import required libraries
+    #IMPORT numpy AS np
+    #IMPORT matplotlib.pyplot AS plt
+
+#2. Define model parameters
+    #SET N = 10000, beta = 0.3, gamma = 0.05, time_steps = 1000
+    
+#3. Initialize SIR compartments
+    #SET I = 1, S = N - I, R = 0
+    #CREATE S_list = [S], I_list = [I], R_list = [R]
+
+#4. Run simulation loop
+    #FOR t IN 0 TO time_steps - 1
+        #infection_prob = beta * I / N
+        #new_infections = np.random.binomial(S, infection_prob)
+        #new_recoveries = np.random.binomial(I, gamma)
+        
+        #S = S - new_infections
+        #I = I + new_infections - new_recoveries
+        #R = R + new_recoveries
+        
+        #APPEND S TO S_list, I TO I_list, R TO R_list
+
+
+#5. Generate and save plot
+   
+
 import numpy as np
 import matplotlib.pyplot as plt
 N=10000

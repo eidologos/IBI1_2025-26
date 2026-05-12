@@ -1,0 +1,5 @@
+This practical was enjoyable but moderately challenging for me. The hardest part was building the 2D spatial SIR model, especially handling neighbour infections and avoiding grid errors. I also needed to think carefully about random probabilities and time-step updates.
+
+To make results clearer, I added curve animations to show real-time changes in susceptible, infected, and recovered groups. Through this task, I understood how stochastic SIR models work and how spatial structure affects disease spread. I improved my skills in NumPy and Matplotlib animation.
+
+Overall, this practical helped me connect epidemiology theory with real coding, and I gained confidence in solving simulation problems.

@@ -1,0 +1,9 @@
+Question: What is the distribution of DALYs across all countries in 2019?
+
+Starting line in dalys.py: 70
+
+Result: The distribution of DALYs rates across countries in 2019 is strongly 
+right‑skewed. Most countries have relatively low DALYs values, while a small 
+number of countries show extremely high values. This pattern is expected because 
+disease burden is closely related to economic development, health care quality, 
+and population structure.

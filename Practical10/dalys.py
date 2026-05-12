@@ -7,20 +7,20 @@ import numpy as np
 dalys_data = pd.read_csv("/Users/zhanghanmeng/Downloads/IBI 1/IBI1_2025-26/Practical10/dalys-rate-from-all-causes.csv")
 
 # Show first 5 rows
-print("\n=== First 5 rows ===")
+print("First 5 rows:")
 print(dalys_data.head(5))
 
 # Show data structure
-print("\n=== Data info ===")
+print("Data info:")
 dalys_data.info()
 
 # Show summary statistics
-print("\n=== Summary statistics ===")
+print("Summary statistics:")
 print(dalys_data.describe())
 
 # Show Year and DALYs (columns 3 and 4) for first 10 rows
 first10_year_dalys = dalys_data.iloc[0:10, [2, 3]]
-print("\n=== First 10 rows: Year & DALYs ===")
+print("First 10 rows: Year & DALYs:")
 print(first10_year_dalys)
 
 # Find year with maximum DALYs in Afghanistan's first 10 entries
@@ -31,12 +31,12 @@ print("\nYear with maximum DALYs in Afghanistan's first 10 records:", max_afg_ye
 # Boolean indexing for columns
 cols_bool = [True, True, False, True]
 bool_selection = dalys_data.iloc[0:3, cols_bool]
-print("\n=== Boolean column selection ===")
+print("Boolean column selection:")
 print(bool_selection)
 
 # Extract all data for Zimbabwe
 zimbabwe = dalys_data.loc[dalys_data['Entity'] == 'Zimbabwe']
-print("\n=== Zimbabwe data ===")
+print("Zimbabwe data:")
 print(zimbabwe[['Year', 'DALYs']])
 
 # First and last year for Zimbabwe
@@ -44,9 +44,8 @@ zim_first = zimbabwe['Year'].min()
 zim_last = zimbabwe['Year'].max()
 print("First and last year for Zimbabwe:", zim_first, "-", zim_last)
 
-# ----------------------
-# 5 Comparing across countries
-# ----------------------
+# Comparing across countries
+
 # Extract 2019 data
 data_2019 = dalys_data.loc[dalys_data['Year'] == 2019, ['Entity', 'DALYs']]
 
@@ -68,9 +67,8 @@ plt.grid(alpha=0.3)
 plt.tight_layout()
 plt.show()
 
-# ----------------------
-# 6 Additional analysis question
-# ----------------------
+# Additional analysis question: What is the distribution of DALYs across all countries in 2019?
+
 # Boxplot of global DALYs in 2019
 plt.figure(figsize=(8, 4))
 plt.boxplot(data_2019['DALYs'], vert=False, widths=0.6)
